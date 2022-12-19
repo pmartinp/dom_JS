@@ -1,5 +1,7 @@
 "use strict";
 // Crea una función clear(elem) que remueva todo del elemento.
-//TODOS: actividad 11
-function clear(elem) { /* tu código */ }
-  clear(elem); // borra la lista
+function clear(elem) {
+  elem.innerHTML = ''; // accedemos al html del "elem" y lo borramos
+}
+
+clear(document.getElementById("elem")); // borra la lista

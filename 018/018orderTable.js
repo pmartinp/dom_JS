@@ -1,10 +1,16 @@
 "use strict";
-/* Inserta el HTML en la lista. Escribe el código para
-insertar <li>2</li><li>3</li> entre dos <li> aquí:
+/* Puede haber más filas en ella.
+Escribe el código para ordenarla por la columna "name".
 */
 
-let one = document.getElementById("one");
+orderByName();
 
-// El método "insertAdjacentHTML", inserta el código html que queramos en la posición
-// relativa que indiquemos al elemento sobre el que lo llamemos.
-one.insertAdjacentHTML("afterend","<li>2</li><li>3</li>");
+function orderByName() {
+  let tBody = document.querySelector("tbody");
+  let sortedRows = Array.from(document.querySelectorAll("tbody tr"))
+    .sort((rowA, rowB) =>
+      rowA.cells[0].textContent.localeCompare(rowB.cells[0].textContent)
+    );
+    
+  tBody.append(...sortedRows);
+}

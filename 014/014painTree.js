@@ -1,4 +1,5 @@
 "use strict";
+// TODO: toda la actividad
 /* Escribe una función createTree que crea una lista ramificada ul/li
 desde un objeto ramificado. Por ejemplo:
 */

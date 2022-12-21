@@ -7,10 +7,10 @@ orderByName();
 
 function orderByName() {
   let tBody = document.querySelector("tbody");
-  let sortedRows = Array.from(document.querySelectorAll("tbody tr"))
+  let sortedTr = Array.from(document.querySelectorAll("tbody tr"))
     .sort((rowA, rowB) =>
       rowA.cells[0].textContent.localeCompare(rowB.cells[0].textContent)
     );
     
-  tBody.append(...sortedRows);
+  tBody.append(...sortedTr);
 }

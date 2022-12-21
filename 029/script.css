@@ -1,0 +1,7 @@
+.selected{
+    background: greenyellow;
+}
+li{
+    margin-top: 5px;
+    cursor: pointer;
+}

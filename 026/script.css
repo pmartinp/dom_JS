@@ -1,0 +1,11 @@
+th{
+    cursor: pointer;
+}
+
+table td, th{
+    border: 2px solid black;
+}
+
+th{
+    background-color: rgb(209, 244, 232);
+}

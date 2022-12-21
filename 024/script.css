@@ -1,0 +1,17 @@
+div{
+    background: rgb(192, 224, 192);
+    width: 400px;
+    border-top: 2px solid green;
+    position: relative;
+    padding: 10px;
+}
+
+.closeButt{
+    color: red;
+    top: 0;
+    right: 8px;
+    position: absolute;
+    border: 0;
+    background: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
